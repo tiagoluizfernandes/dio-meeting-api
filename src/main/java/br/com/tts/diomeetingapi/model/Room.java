@@ -1,13 +1,9 @@
 package br.com.tts.diomeetingapi.model;
 
-import com.google.gson.Gson;
 import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import lombok.ToString;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -44,17 +40,6 @@ public class Room {
 
     @Column(name = "endHour", nullable = false)
     private String endHour;
-
-    @Override
-    public String toString() {
-        return "Room {" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", date='" + date + '\'' +
-                ", startHour='" + startHour + '\'' +
-                ", endHour='" + endHour + '\'' +
-                '}';
-    }
 
 }
 
