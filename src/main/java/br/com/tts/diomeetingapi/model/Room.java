@@ -41,5 +41,8 @@ public class Room {
     @Column(name = "endHour", nullable = false)
     private String endHour;
 
+    @Column(name = "active", nullable = true)
+    private boolean active;
+
 }
 
